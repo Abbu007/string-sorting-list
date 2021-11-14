@@ -1,0 +1,11 @@
+a=['abc','ab','a','abcde','abcd']
+b = []
+c=range(0,5)
+d=0
+for i in c :
+    for j in c:
+        if len(a[i])<len(a[j]):
+            d=a[i]
+            a[i]=a[j]
+            a[j]=d
+print(a)
